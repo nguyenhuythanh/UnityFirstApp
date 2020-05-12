@@ -44,6 +44,6 @@ public class LeaderBoardManager : MonoBehaviour {
 	}
 
 	public void BackButton(){
-		Application.LoadLevel("Stage");
+		SceneManager.LoadScene("Stage");
 	} 
 }

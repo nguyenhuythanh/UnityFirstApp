@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Manager : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class Manager : MonoBehaviour
 	public void GameOver ()
 	{
 		FindObjectOfType<Score> ().Save ();
-		Application.LoadLevel ("SaveScore");
+		SceneManager.LoadScene("SaveScore");
 		// ゲームオーバー時に、タイトルを表示する
 	}
 	
@@ -62,7 +63,7 @@ public class Manager : MonoBehaviour
 	}
 
 	public void leaderBoardButtonDown(){
-		Application.LoadLevel("LeaderBoard");
+		SceneManager.LoadScene("LeaderBoard");
 	}
 
 	public void ghostButtonDown(){
